@@ -1,0 +1,16 @@
+#include <opencv2/core.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/xfeatures2d.hpp>
+
+using namespace cv;
+using namespace cv::xfeatures2d;
+
+Mat sift(String filename) {
+    const Mat input = imread(filename, 0); //Load as grayscale
+    Ptr<SIFT> siftPtr = SIFT::create();
+    std::vector<KeyPoint> keypoints;
+    siftPtr->detect(input, keypoints);
+    Mat output;
+    siftPtr->compute(input, keypoints, output);
+    return output;
+}
