@@ -6,11 +6,21 @@ using namespace cv;
 using namespace cv::xfeatures2d;
 
 Mat sift(String filename) {
-    const Mat input = imread(filename, 0); //Load as grayscale
+    const Mat input = imread(filename); //Load as grayscale
     Ptr<SIFT> siftPtr = SIFT::create();
     std::vector<KeyPoint> keypoints;
     siftPtr->detect(input, keypoints);
     Mat output;
     siftPtr->compute(input, keypoints, output);
+    return output;
+}
+
+Mat surf(String filename) {
+    const Mat input = imread(filename);
+    Ptr<SURF> surfPtr = SURF::create();
+    std::vector<KeyPoint> keypoints;
+    surfPtr->detect(input, keypoints);
+    Mat output;
+    surfPtr->compute(input, keypoints, output);
     return output;
 }

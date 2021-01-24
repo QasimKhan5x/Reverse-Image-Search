@@ -9,3 +9,4 @@ using namespace cv;
 using namespace cv::xfeatures2d;
 
 Mat sift(String filename);
+Mat surf(String filename);

@@ -1,2 +1,3 @@
 ﻿  RIS.cpp
-  RIS.vcxproj -> G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\x64\Debug\RIS.exe
+Sift.obj : error LNK2019: unresolved external symbol "public: static struct cv::Ptr<class cv::xfeatures2d::SURF> __cdecl cv::xfeatures2d::SURF::create(double,int,int,bool,bool)" (?create@SURF@xfeatures2d@cv@@SA?AU?$Ptr@VSURF@xfeatures2d@cv@@@3@NHH_N0@Z) referenced in function "class cv::Mat __cdecl surf(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?surf@@YA?AVMat@cv@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+E:\Documents\NUST\S3\Data Structures and Algorithms\Project\Reverse-Image-Search\RIS\x64\Debug\RIS.exe : fatal error LNK1120: 1 unresolved externals
