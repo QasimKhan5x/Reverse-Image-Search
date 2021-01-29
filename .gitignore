@@ -1,6 +1,6 @@
-/RIS/.vs
-/RIS/x64
-/RIS/RIS/x64
+/RIS/.vs/
+/RIS/x64/
+/RIS/RIS/x64/
 
 # Prerequisites
 *.d
