@@ -1,0 +1,5 @@
+﻿  RIS.cpp
+  Sift.cpp
+Sift.obj : error LNK2001: unresolved external symbol "class cv::_InputOutputArray const & __cdecl cv::noArray(void)" (?noArray@cv@@YAAEBV_InputOutputArray@1@XZ)
+Sift.obj : error LNK2001: unresolved external symbol "public: static struct cv::Ptr<class cv::xfeatures2d::SURF> __cdecl cv::xfeatures2d::SURF::create(double,int,int,bool,bool)" (?create@SURF@xfeatures2d@cv@@SA?AU?$Ptr@VSURF@xfeatures2d@cv@@@3@NHH_N0@Z)
+G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\x64\Release\RIS.exe : fatal error LNK1120: 2 unresolved externals
