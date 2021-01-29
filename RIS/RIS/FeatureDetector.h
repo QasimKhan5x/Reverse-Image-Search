@@ -1,0 +1,13 @@
+#include <opencv2/core.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/xfeatures2d.hpp>
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+using namespace cv;
+using namespace cv::xfeatures2d;
+
+Mat sift(String filename);
+Mat surf(String filename);
