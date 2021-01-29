@@ -26,16 +26,17 @@ int main(int argc, char** argv)
     cout << "Cols: " << cols << endl;
     cout << "Size: " << mat.size << endl;
     
+    /*
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++)
             cout << mat.ptr<float>(i)[j] << " ";
         cout << endl;
     }
-
+    */
     
     HashGeneration h = HashGeneration();
-    vector<float*> Features = h.generateHash(mat);
-
+    Mat Features = h.generateHash(mat);
+    /*
     cout << endl;
     cout << endl;
 
@@ -43,12 +44,14 @@ int main(int argc, char** argv)
 
     cout << endl;
     cout << endl;
+    */
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 16; j++) {
-            cout << Features[i][j] << "  ";
+            cout << Features.ptr<double>(i)[j] << " ";
         }
         cout << endl;
     }
+    
 
     return 0;
 }
