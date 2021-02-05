@@ -54,7 +54,6 @@ int main(int argc, char** argv)
 
     cout << "Hash Matrix" << endl;
     cout << Features.size() << endl;
-    cout << Features.size() << endl;
     cout << Features.rows << endl;
     cout << Features.cols << endl;
     cout << endl;

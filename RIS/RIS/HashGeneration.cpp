@@ -26,13 +26,25 @@ public:
 					}
 					sum = sum * 4.0;
 					Desc.push_back(sum);
-					
 					g1.ptr<double>(d)[n] = floor(sum + 0.5) >= 4.0 ? 3 : floor(sum + 0.5);
+					int part = sum / 1;
+					double fractional = sum - (double)part;
+					if (fractional < 0.3) {
+						g2.ptr<double>(d)[n] = g1.ptr<double>(d)[n] - 1 < 0 ? 0 : g1.ptr<double>(d)[n] - 1;
+					}
+					else if (fractional > 0.7) {
+						g2.ptr<double>(d)[n] = g1.ptr<double>(d)[n] + 1;
+					}
+					else {
+						g2.ptr<double>(d)[n] = g1.ptr<double>(d)[n];
+					}
 				}
 				Temp.push_back(Desc);
+				
 
 		}
-		
+		//cout << g1;
+		//cout << g2;
 	//	cout << (int) g1.ptr<double>(0)[0];
 
 		Mat tempMat(Temp.size(), Temp.at(0).size(), CV_64FC1);
