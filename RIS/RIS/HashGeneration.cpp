@@ -11,8 +11,8 @@ struct HashGen {
 
 	HashGen(const Mat mat) {
 		this->mat = mat;
-		g1 = Mat(mat.rows, mat.cols, CV_64FC1);
-		g2 = Mat(mat.rows, mat.cols, CV_64FC1);
+		g1 = Mat(mat.rows, mat.cols, CV_8U);
+		g2 = Mat(mat.rows, mat.cols, CV_8U);
 	}
 	
 	void computeHash() {
@@ -23,17 +23,17 @@ struct HashGen {
 					sum += pow(mat.ptr<float>(d)[16*i + n], 2);
 				}
 				sum *= 4.0;
-				g1.ptr<double>(d)[n] = floor(sum + 0.5) >= 4.0 ? 3 : floor(sum + 0.5);
+				g1.ptr<uchar>(d)[n] = floor(sum + 0.5) >= 4.0 ? (uchar) 3 : (uchar) floor(sum + 0.5);
 				double intpart;
 				double fractpart = modf(sum, &intpart);
 				if (fractpart < 0.3) {
-					g2.ptr<double>(d)[n] = g1.ptr<double>(d)[n] - 1 < 0 ? 0 : g1.ptr<double>(d)[n] - 1;
+					g2.ptr<uchar>(d)[n] = g1.ptr<uchar>(d)[n] - 1 < 0 ? 0 : g1.ptr<uchar>(d)[n] - 1;
 				}
 				else if (fractpart > 0.7) {
-					g2.ptr<double>(d)[n] = g1.ptr<double>(d)[n] + 1;
+					g2.ptr<uchar>(d)[n] = g1.ptr<uchar>(d)[n] + 1;
 				}
 				else {
-					g2.ptr<double>(d)[n] = g1.ptr<double>(d)[n];
+					g2.ptr<uchar>(d)[n] = g1.ptr<uchar>(d)[n];
 				}
 			}
 		}
