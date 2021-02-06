@@ -1,23 +1,23 @@
 #include <opencv2/core.hpp>
 #include <opencv2/highgui.hpp>
-#include <opencv2/xfeatures2d.hpp>
-#include <vector>
 #include <iostream>
 
 using namespace cv;
-using namespace cv::xfeatures2d;
 using namespace std;
 
-class HashGeneration
-{
+struct HashGen {
 	
-public:
-	Mat g1 = Mat(1070, 16, CV_64FC1);
-	Mat g2 = Mat(1070, 16, CV_64FC1);
+	Mat g1, g2, mat;
 
-	void generateHash(const Mat mat) {
-		for (int d = 0; d < mat.rows; d++) {
-			for (int n = 0; n < mat.cols; n++) {
+	HashGen(const Mat mat) {
+		this->mat = mat;
+		g1 = Mat(mat.rows, mat.cols, CV_64FC1);
+		g2 = Mat(mat.rows, mat.cols, CV_64FC1);
+	}
+	
+	void computeHash() {
+		for (int d = 0; d < g1.rows; d++) {
+			for (int n = 0; n < 16; n++) {
 				float sum = 0;
 				for (int i = 0; i < 4; i++) {
 					sum += pow(mat.ptr<float>(d)[16*i + n], 2);
