@@ -6,7 +6,7 @@ using namespace cv;
 using namespace cv::xfeatures2d;
 
 Mat sift(String filename) {
-    const Mat input = imread(filename); //Load as grayscale
+    const Mat input = imread(filename);
     Ptr<SIFT> siftPtr = SIFT::create();
     std::vector<KeyPoint> keypoints;
     siftPtr->detect(input, keypoints);

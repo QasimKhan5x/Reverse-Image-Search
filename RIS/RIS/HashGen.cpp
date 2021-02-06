@@ -11,8 +11,8 @@ struct HashGen {
 
 	HashGen(const Mat mat) {
 		this->mat = mat;
-		g1 = Mat(mat.rows, mat.cols, CV_8UC3);
-		g2 = Mat(mat.rows, mat.cols, CV_8UC3);
+		g1 = Mat(mat.rows, mat.cols, CV_8U);
+		g2 = Mat(mat.rows, mat.cols, CV_8U);
 	}
 	
 	void computeHash() {

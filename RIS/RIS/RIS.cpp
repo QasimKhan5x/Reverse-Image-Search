@@ -24,7 +24,7 @@ int main(int argc, char** argv) {
 
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++)
-            cout << h.g1.ptr<double>(i)[j] << " ";
+            cout << (int) h.g1.ptr<uchar>(i)[j] << " ";
         cout << endl;
     }
         
@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
 
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++)
-            cout << h.g2.ptr<double>(i)[j] << " ";
+            cout << (int) h.g2.ptr<uchar>(i)[j] << " ";
         cout << endl;
     }
     
