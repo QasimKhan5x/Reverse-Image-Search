@@ -1,13 +1,6 @@
 ﻿  HashGeneration.cpp
-G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGeneration.cpp(25,1): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGeneration.cpp(27,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGeneration.cpp(30,15): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGeneration.cpp(50,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+E:\Documents\NUST\S3\Data Structures and Algorithms\Project\Reverse-Image-Search\RIS\RIS\HashGeneration.cpp(24,1): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
   RIS.cpp
-G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGeneration.cpp(25,1): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGeneration.cpp(27,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGeneration.cpp(30,15): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGeneration.cpp(50,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  FeaturerDetector.cpp
+E:\Documents\NUST\S3\Data Structures and Algorithms\Project\Reverse-Image-Search\RIS\RIS\HashGeneration.cpp(24,1): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
   Generating Code...
-  RIS.vcxproj -> G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\x64\Debug\RIS.exe
+  RIS.vcxproj -> E:\Documents\NUST\S3\Data Structures and Algorithms\Project\Reverse-Image-Search\RIS\x64\Debug\RIS.exe
