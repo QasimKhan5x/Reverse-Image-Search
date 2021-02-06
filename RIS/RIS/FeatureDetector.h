@@ -1,9 +1,6 @@
 #include <opencv2/core.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/xfeatures2d.hpp>
-#include <iostream>
-#include <string>
-#include <algorithm>
 
 using namespace std;
 using namespace cv;

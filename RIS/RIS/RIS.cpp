@@ -1,7 +1,7 @@
 #include <opencv2/core.hpp>
 #include <iostream>
 #include "FeatureDetector.h"
-#include "HashGeneration.cpp"
+#include "HashGen.cpp"
 
 using namespace std;
 using namespace cv;
