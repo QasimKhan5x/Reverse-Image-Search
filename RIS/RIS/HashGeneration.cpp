@@ -16,9 +16,8 @@ public:
 	Mat g2 = Mat(1070, 16, CV_64FC1);
 
 	void generateHash(const Mat mat) {
-		for (int d = 0; d < 1070; d++) {
-			vector<float> Desc;
-			for (int n = 0; n < 16; n++) {
+		for (int d = 0; d < mat.rows; d++) {
+			for (int n = 0; n < mat.cols; n++) {
 				float sum = 0;
 				for (int i = 0; i < 4; i++) {
 					sum += pow(mat.ptr<float>(d)[16*i + n], 2);
