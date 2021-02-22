@@ -9,6 +9,18 @@ using namespace std;
 using namespace cv;
 using namespace cv::xfeatures2d;
 
+/*
+The class should contain one attribute:
+a map from G1 hash to an MainIndex object
+
+Procedure for creation:
+    for i = 1 to G1.length
+        g1 = vectorToInt32(G1[i])
+        FNode = MainIndex(g1);
+        map.putIfAbsent(g1, FNode)
+    
+*/
+
 class Root {
 private:
 	unordered_map<int, MainIndex> map;
