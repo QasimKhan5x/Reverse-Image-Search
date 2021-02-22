@@ -24,3 +24,11 @@ Mat surf(String filename) {
     surfPtr->compute(input, keypoints, output);
     return output;
 }
+
+std::vector<KeyPoint> getKeypoints(String filename) {
+    const Mat input = imread(filename);
+    Ptr<SURF> surfPtr = SURF::create();
+    std::vector<KeyPoint> keypoints;
+    surfPtr->detect(input, keypoints);
+    return keypoints;
+}

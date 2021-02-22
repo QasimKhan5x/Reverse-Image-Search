@@ -1,3 +1,6 @@
-﻿  HashGen.cpp
-E:\Documents\NUST\S3\Data Structures and Algorithms\Project\Reverse-Image-Search\RIS\RIS\HashGen.cpp(23,1): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-  RIS.vcxproj -> E:\Documents\NUST\S3\Data Structures and Algorithms\Project\Reverse-Image-Search\RIS\x64\Debug\RIS.exe
+﻿  Keypoints.cpp
+  Root.cpp
+G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGen.cpp(23,1): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  SubIndex.cpp
+  Generating Code...
+  RIS.vcxproj -> G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\x64\Debug\RIS.exe

@@ -11,12 +11,12 @@ struct HashGen {
 
 	HashGen(const Mat mat) {
 		this->mat = mat;
-		g1 = Mat(mat.rows, mat.cols, CV_8UC3);
-		g2 = Mat(mat.rows, mat.cols, CV_8UC3);
+		g1 = Mat(mat.rows, 16, CV_8UC3);
+		g2 = Mat(mat.rows, 16, CV_8UC3);
 	}
 	
 	void computeHash() {
-		for (int d = 0; d < g1.rows; d++) {
+	/*	for (int d = 0; d < g1.rows; d++) {
 			for (int n = 0; n < 16; n++) {
 				float sum = 0;
 				for (int i = 0; i < 4; i++) {
@@ -37,8 +37,7 @@ struct HashGen {
 				}
 			}
 		}
-		
+	*/
 	}
 	
-
 };
