@@ -21,12 +21,12 @@ public:
 			vector<uchar> temp;
 			G2.row(i).copyTo(temp);
 			// compare g2 with temp int value
-			if (g2 == temp) {
+		/*	if (g2 == temp) {
 				vector<uchar> desc_temp;
 				Descriptors.row(i).copyTo(desc_temp);
 				kps.at(i).setDescriptor(desc_temp);
 				keypoints.push_back(kps.at(i));
-			}
+			}*/
 		}
 	}
 };

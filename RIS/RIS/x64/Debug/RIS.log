@@ -1,6 +1,16 @@
-﻿  Keypoints.cpp
+﻿  HashGen.cpp
+G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGen.cpp(23,1): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  Keypoints.cpp
+  MainIndex.cpp
+  RIS.cpp
+G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGen.cpp(23,1): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\Root.cpp(60,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\Root.cpp(81,1): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  FeatureDetector.cpp
   Root.cpp
 G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\HashGen.cpp(23,1): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\Root.cpp(60,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\RIS\Root.cpp(81,1): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
   SubIndex.cpp
   Generating Code...
   RIS.vcxproj -> G:\Semester Related Stuff\DSA\Project\Reverse-Image-Search\RIS\x64\Debug\RIS.exe
