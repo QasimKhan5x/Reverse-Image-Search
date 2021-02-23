@@ -9,6 +9,20 @@ using namespace cv;
 using namespace cv::xfeatures2d;
 
 class MainIndex {
-	float g1;
-	unordered_map<int, SubIndex> map;
+private:
+	int g1;
+	unordered_map<vector<uchar>, SubIndex> map;
+
+public:
+
+	MainIndex(vector<uchar> g1) {
+
+	}
+
+
+	int combine_g1(vector<uchar> g1) {
+		// convert g1 vector to binaries and then combine all those binaries to
+		// int 32
+	}
+
 };
